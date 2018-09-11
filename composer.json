@@ -1,0 +1,24 @@
+{
+    "name": "pilipinews/absbcn",
+    "description": "Crawler and scraper for ABS-CBN News website.",
+    "homepage": "https://github.com/pilipinews/absbcn",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.0",
+        "pilipinews/common": "~0.1",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.2|~5.7",
+        "scrutinizer/ocular": "~1.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pilipinews\\Website\\Abscbn\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pilipinews\\Website\\Abscbn\\": "tests"
+        }
+    }
+}
