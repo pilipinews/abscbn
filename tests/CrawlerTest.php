@@ -17,5 +17,10 @@ class CrawlerTest extends \PHPUnit_Framework_TestCase
      */
     public function testCrawlMethod()
     {
+        $crawler = new Crawler;
+
+        $items = $crawler->crawl();
+
+        $this->assertTrue(true);
     }
 }
