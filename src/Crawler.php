@@ -3,8 +3,8 @@
 namespace Pilipinews\Website\Abscbn;
 
 use Pilipinews\Common\Client;
+use Pilipinews\Common\Crawler as DomCrawler;
 use Pilipinews\Common\Interfaces\CrawlerInterface;
-use Symfony\Component\DomCrawler\Crawler as DomCrawler;
 
 /**
  * ABS-CBN News Crawler
