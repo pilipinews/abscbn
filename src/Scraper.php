@@ -72,7 +72,8 @@ class Scraper extends AbstractScraper implements ScraperInterface
      */
     protected function album(DomCrawler $crawler)
     {
-        $callback = function (DomCrawler $crawler, $html) {
+        $callback = function (DomCrawler $crawler, $html)
+        {
             $results = array();
 
             $pattern = '.slider-for > div > img';
@@ -83,12 +84,14 @@ class Scraper extends AbstractScraper implements ScraperInterface
 
             $texts = $crawler->filter($pattern);
 
-            for ($i = 0; $i < $items->count(); $i++) {
+            for ($i = 0; $i < $items->count(); $i++)
+            {
                 $link = 'PHOTO: ' . $items->eq($i)->attr('src');
 
                 $text = '';
 
-                if ($texts->count() !== 1) {
+                if ($texts->count() !== 1)
+                {
                     $text = $texts->eq($i)->text();
                 }
 
@@ -111,7 +114,8 @@ class Scraper extends AbstractScraper implements ScraperInterface
      */
     protected function embedly(DomCrawler $crawler)
     {
-        $callback = function (DomCrawler $crawler) {
+        $callback = function (DomCrawler $crawler)
+        {
             $item = $crawler->filter('a')->first();
 
             return 'EMBED: ' . $item->attr('href');
@@ -128,14 +132,16 @@ class Scraper extends AbstractScraper implements ScraperInterface
      */
     protected function image(DomCrawler $crawler)
     {
-        $callback = function (DomCrawler $crawler, $html) {
+        $callback = function (DomCrawler $crawler, $html)
+        {
             $image = 'PHOTO: ' . $crawler->filter('img')->attr('src');
 
             $image = str_replace('?ext=.jpg', '', (string) $image);
 
             $text = '<p>' . $image . ' - ' . $crawler->text() . '</p>';
 
-            if (strpos($html, '<em>') !== false) {
+            if (strpos($html, '<em>') !== false)
+            {
                 $em = $crawler->filter('em')->first()->text();
 
                 $text = str_replace($em, '(' . $em . ')', $text);
@@ -155,7 +161,8 @@ class Scraper extends AbstractScraper implements ScraperInterface
      */
     protected function post(DomCrawler $crawler)
     {
-        $callback = function (DomCrawler $node, $html) {
+        $callback = function (DomCrawler $node, $html)
+        {
             return '<p>POST: ' . $node->attr('data-href') . '</p>';
         };
 
@@ -170,7 +177,8 @@ class Scraper extends AbstractScraper implements ScraperInterface
      */
     protected function video(DomCrawler $crawler)
     {
-        $callback = function (DomCrawler $crawler) {
+        $callback = function (DomCrawler $crawler)
+        {
             $element = $crawler->filter('iframe');
 
             $link = $element->attr('src');

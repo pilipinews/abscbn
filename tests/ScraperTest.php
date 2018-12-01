@@ -41,7 +41,8 @@ class ScraperTest extends \PHPUnit_Framework_TestCase
 
         $files = (array) glob(__DIR__ . '/Articles/*.txt');
 
-        foreach ((array) $files as $file) {
+        foreach ((array) $files as $file)
+        {
             $text = file_get_contents((string) $file);
 
             $url = $this->link((string) $file);

@@ -28,7 +28,8 @@ class Crawler implements CrawlerInterface
     {
         $response = Client::request($this->link);
 
-        $callback = function (DomCrawler $node) {
+        $callback = function (DomCrawler $node)
+        {
             $url = 'https://news.abs-cbn.com';
 
             return $url . $node->attr('href');
@@ -51,7 +52,8 @@ class Crawler implements CrawlerInterface
      */
     protected function verify($items)
     {
-        $callback = function ($link) {
+        $callback = function ($link)
+        {
             $news = strpos($link, '.com/news/') !== false;
 
             $media = strpos($link, 'news/multimedia') === false;
