@@ -10,7 +10,7 @@ use Pilipinews\Common\Interfaces\CrawlerInterface;
  * ABS-CBN News Crawler
  *
  * @package Pilipinews
- * @author  Rougin Royce Gutib <rougingutib@gmail.com>
+ * @author  Rougin Gutib <rougingutib@gmail.com>
  */
 class Crawler implements CrawlerInterface
 {

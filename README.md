@@ -31,13 +31,8 @@ Please see [CHANGELOG][link-changelog] for more information what has changed rec
 $ composer test
 ```
 
-## Security
-
-If you discover any security related issues, please email rougingutib@gmail.com instead of using the issue tracker.
-
 ## Credits
 
-- [Rougin Royce Gutib][link-author]
 - [All contributors][link-contributors]
 
 ## License
@@ -51,7 +46,6 @@ The MIT License (MIT). Please see [LICENSE][link-license] for more information.
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/pilipinews/abscbn.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/pilipinews/abscbn.svg?style=flat-square
 
-[link-author]: https://rougin.github.io
 [link-changelog]: https://github.com/pilipinews/abscbn/blob/master/CHANGELOG.md
 [link-code-quality]: https://scrutinizer-ci.com/g/pilipinews/abscbn
 [link-contributors]: https://github.com/pilipinews/abscbn/contributors
