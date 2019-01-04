@@ -7,8 +7,6 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Crawler and scraper for [ABS-CBN News](https://news.abs-cbn.com/) website.
-
 ## Installation
 
 Install `ABS-CBN News` via [Composer](https://getcomposer.org/):
@@ -16,10 +14,6 @@ Install `ABS-CBN News` via [Composer](https://getcomposer.org/):
 ``` bash
 $ composer require pilipinews/abscbn
 ```
-
-## Basic Usage
-
-Coming soon.
 
 ## Changelog
 
