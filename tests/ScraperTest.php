@@ -88,8 +88,6 @@ class ScraperTest extends \PHPUnit_Framework_TestCase
 
         $date = substr($name, 0, 8);
 
-        $time = strtotime($date);
-
         $new = date('m/d/y/', strtotime($date));
 
         $url = str_replace($date . '-', $new, $name);
