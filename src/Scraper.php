@@ -27,7 +27,8 @@ class Scraper extends AbstractScraper implements ScraperInterface
         'I-refresh ang pahinang ito para sa updates.',
         'I-refresh ang page na ito para sa updates.',
         'Refresh this link for more details.',
-        'I-refresh ang web page na ito para sa mga pinakahuling update.'
+        'I-refresh ang web page na ito para sa mga pinakahuling update.',
+        'Please refresh this page for updates.',
     );
 
     /**
